@@ -19,7 +19,7 @@ PlacesListScreen.navigationOptions = (navData) => {
         <Item
           title="Add Place"
           iconName={Platform.OS === "android" ? "md-add" : "ios-add"}
-          onPress={navData.navigation.navigate("NewPlace")}
+          onPress={() => navData.navigation.navigate("NewPlace")}
         />
       </HeaderButtons>
     ),
